@@ -1,0 +1,23 @@
+{
+  "name": "teste",
+  "require": {
+    "php": ">=5.3"
+  },
+
+  "minimum-stability": "alpha",
+  "authors": [
+    {
+      "name": "Lorenzo Freitas",
+      "email": "lorenzo.wendt@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "MVC": "vendor",
+      "App": "/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
