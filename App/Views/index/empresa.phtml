@@ -1,0 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lorenzo
+ * Date: 28/02/16
+ * Time: 02:13
+ */
+
+$conteudo1 = "Esse é o conteudo 1 da página Empresa gerado aleatóriamente";
+$conteudo2 = "Esse é o conteudo 2 da página Empresa gerado aleatóriamente";
+
+$selecao = array($conteudo1, $conteudo2);
+
+$chave = array_rand($selecao);
+
+echo $selecao[$chave];
+
+?>

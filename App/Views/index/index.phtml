@@ -1,0 +1,22 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lorenzo
+ * Date: 28/02/16
+ * Time: 02:12
+ */
+
+$conteudo1 = "Esse é o conteudo 1 da página Home gerado aleatóriamente";
+$conteudo2 = "Esse é o conteudo 2 da página Home gerado aleatóriamente";
+
+$selecao = array($conteudo1, $conteudo2);
+
+$chave = array_rand($selecao);
+
+echo $selecao[$chave]."</br>";
+
+foreach($this->view->nomes as $nome){
+    echo $nome."</br>";
+}
+
+?>
