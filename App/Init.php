@@ -20,6 +20,7 @@ class Init extends Bootstrap
         $ar['nosso_trabalho'] = array('route' => '/nosso_trabalho', 'controller' => 'index', 'action' => 'nossoTrabalho');
         $ar['localizacao'] = array('route' => '/localizacao', 'controller' => 'index', 'action' => 'localizacao');
         $ar['fale_conosco'] = array('route' => '/fale_conosco', 'controller' => 'index', 'action' => 'faleConosco');
+        $ar['newsletter'] = array('route' => '/newsletter', 'controller' => 'index', 'action' => 'newsletter');
         $this->setRoutes($ar);
     }
 }

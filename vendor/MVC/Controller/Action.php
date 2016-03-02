@@ -9,6 +9,9 @@
 
 namespace MVC\Controller;
 
+use MVC\Controller\Form;
+use MVC\Controller\FormElements;
+
 abstract class Action
 {
     protected $view;
@@ -17,6 +20,22 @@ abstract class Action
     public function __construct()
     {
         $this->view = new \stdClass();
+    }
+
+    public function form(array $paramForm)
+    {
+        $form = new Form($paramForm);
+        $html = $form->getHtml();
+
+        return $html;
+    }
+
+    public function formElements(array $input)
+    {
+        $form = new FormElements();
+        $html = $form->input($input);
+
+        return $html;
     }
 
     public function render($action, $layout = true)
